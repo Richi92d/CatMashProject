@@ -1,0 +1,9 @@
+<h1 class="center">Quel est le plus beau des chats ?</h1>
+<div class="cat-container">
+    <img *ngFor="let cat of twoCatsArray" class="cat-image" [src]="cat.url" (click)="voteForThisCat(cat.id)">
+</div>
+<h2 class="center">
+    Pour élire le plus beau des chats clique sur une image
+    et rend toi dans l'onglet Vote pour voir le
+    classement
+</h2>

@@ -1,0 +1,25 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+h1.center {
+    margin-top: 0;
+}
+
+.color {
+    background: #B0C4DE;
+    height: 5vw;
+    top: 0;
+    margin-top: 0;
+    color: white;
+}
+
+footer {
+    margin-top: auto;
+    background: #B0C4DE;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    height: 3vw;
+}

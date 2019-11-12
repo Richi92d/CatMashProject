@@ -1,0 +1,22 @@
+.cat-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-image {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cat-image:hover {
+    opacity: 0.6;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}

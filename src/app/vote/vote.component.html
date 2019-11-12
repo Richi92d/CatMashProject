@@ -1,0 +1,15 @@
+<div *ngFor="let cat of catService.catVote">
+    <div *ngIf="cat.rating">
+        <table>
+            <tr>
+                <th>Img</th>
+                <th>Scores</th>
+
+            </tr>
+            <tr>
+                <td><img class="cat-vote-img" [src]="cat.url"></td>
+                <td>{{cat.rating}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
