@@ -9,8 +9,6 @@ import { CatNotFoundComponent } from './cat-not-found/cat-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,15 +17,16 @@ import { environment } from '../environments/environment';
     VoteComponent,
     CatNotFoundComponent
   ],
+
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
