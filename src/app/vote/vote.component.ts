@@ -12,5 +12,4 @@ export class VoteComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

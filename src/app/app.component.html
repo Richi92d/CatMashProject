@@ -1,13 +1,24 @@
-<header class="color">
-  <h1 class="center">CAT MASH</h1>
-</header>
+<div class="header">
+    <div class="header__bg"></div>
+    <h1 class="header__title">Cat Mash</h1>
+</div>
+
+<div class="about">
+    <div class="about__title">
+        <h2 class="about__title--text">Chat alors !</h2>
+    </div>
+    <div class="about__text">
+        <p class="about__text--content">
+            Cat Mash c'est un défi qui ma étai lancé par une boîte pour faire un site où nous pouvons voter pour le chat le plus beau !!
+        </p>
+    </div>
+</div>
 <nav mat-tab-nav-bar mat-align-tabs="center">
-  <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    {{link.label}}
-  </a>
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        {{link.label}}
+    </a>
 </nav>
 <router-outlet></router-outlet>
 <footer>
-
 </footer>

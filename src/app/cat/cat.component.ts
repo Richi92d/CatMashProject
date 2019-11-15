@@ -39,7 +39,7 @@ export class CatComponent implements OnInit {
     return index;
   }
 
-   getRandomInt(max): number {
+  getRandomInt(max): number {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
@@ -51,7 +51,7 @@ export class CatComponent implements OnInit {
   }
 
   getIncrementedCatRatingValue(rating: number | undefined): number {
-    return rating ? ++rating: 1;
+    return rating ? ++rating : 1;
   }
 
 }
